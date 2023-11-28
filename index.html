@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/weather-api/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Weather App</title>
+    <script type="module" crossorigin src="/weather-api/assets/index-5d08b5c5.js"></script>
+    <link rel="stylesheet" href="/weather-api/assets/index-cb880f58.css">
+  </head>
+  <body>
+    <header>
+      <h1>Some Weather Form Our World</h1>
+      <div class="giphy">
+        <img src="./globe.gif" alt="Globe-Black&White-giphy">
+        <form action="post" id="Locform">
+          <input type="text" name="Locinput" id="Locinput" placeholder="Enter City Name">
+          <button type="submit">Search</button>
+        </form>
+      </div>  
+    </header>
+    <div id="app">
+      <main id="weather-data" class="hidden">
+        <div class="time">
+          <p id="location-localtime"></p>
+        </div>
+        <div class="location">
+          <h3 id="location-name"></h3>
+          <h3 id="location-region"></h3>
+          <h3 id="location-country"></h3>
+        </div>
+        <div class="weather">
+          <div class="temp">
+            <p id="weather-temperatureF"></p>
+            <input type="checkbox" id="unit-slider">
+            <label for="unit-slider">
+              <svg class="temp-c" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M370.6,367.836c-5.889-2.158-12.444,0.842-14.611,6.742c-25.644,69.658-82.756,114.667-145.5,114.667 c-87.833,0-159.289-86.767-159.289-193.422c0-106.653,71.456-193.422,159.289-193.422c62.378,0,119.356,44.647,145.167,113.733 c2.2,5.889,8.755,8.87,14.633,6.681c5.889-2.203,8.878-8.745,6.678-14.636C347.811,130.1,282.456,79.644,210.489,79.644 c-100.378,0-182.044,96.98-182.044,216.178C28.444,415.025,110.111,512,210.489,512c72.389,0,137.878-50.856,166.856-129.553 C379.511,376.547,376.489,370.003,370.6,367.836z"></path> </g> </g> <g> <g> <path d="M426.667,0c-31.367,0-56.889,25.525-56.889,56.889c0,31.369,25.522,56.889,56.889,56.889 c31.367,0,56.889-25.519,56.889-56.889C483.556,25.525,458.034,0,426.667,0z M426.667,91.022 c-18.822,0-34.133-15.311-34.133-34.133c0-18.82,15.311-34.133,34.133-34.133S460.8,38.069,460.8,56.889 C460.8,75.711,445.489,91.022,426.667,91.022z"></path> </g> </g> </g></svg>
+              <svg class="temp-f" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M410.147,0c-32.835,0-59.553,26.72-59.553,59.553c0,32.838,26.717,59.553,59.553,59.553 c32.836,0,59.553-26.714,59.553-59.553C469.699,26.72,442.982,0,410.147,0z M410.147,95.284 c-19.704,0-35.732-16.028-35.732-35.732c0-19.701,16.028-35.732,35.732-35.732c19.704,0,35.732,16.031,35.732,35.732 C445.878,79.256,429.85,95.284,410.147,95.284z"></path> </g> </g> <g> <g> <polygon points="316.243,107.041 316.243,83.22 64.74,83.22 42.301,83.22 42.301,107.195 42.301,285.854 42.301,309.675 42.301,512 66.122,512 66.122,309.52 268.601,309.52 268.601,285.699 66.122,285.699 66.122,107.041 "></polygon> </g> </g> </g></svg>            
+            </label>
+          </div>
+          <div id= "weather-condition" class="weather-condition">
+            <img id="weather-gif" src="" alt="giphy.com">
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>Jacob Warren 2023</footer>
+    
+  </body>
+</html>
